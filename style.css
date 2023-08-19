@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("./images/set.jpg") ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+   background:rgba(1,1,1,0.5);
+}
+.head h1{
+     
+    position: relative;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 60px;
+    font-family: 'Tilt Prism', cursive;
+}
+.head h1:after{
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    content:'';
+    height: 3px;
+    width: 100%;
+    background: white;
+}
+
+
+
+.kit{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: rgba(1,1,1,0.5);
+}
+.blocks{
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.drum{
+    width: 150px;
+    height: 150px;
+    box-shadow: 1px 1px 7px white;
+    margin-bottom: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    transition: .2s;
+}
+
+
+.tom1{
+    background: url("./images/tom1.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.tom2{
+    background: url("./images/tom2.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.tom3{
+    background: url("./images/tom3.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.tom4{
+    background: url("./images/tom4.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.snare{
+    background: url("./images/snare.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.crash{
+    background: url("./images/crash.png") no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.kick{
+    background: url("./images/kick.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.drum h2{
+    font-family: 'Tilt Prism', cursive;
+    font-size: 100px;
+    color: #DA0463;
+    user-select: none;
+}
+.animate__animated.animate__bounce {
+    --animate-duration:0.9s;
+  }
+  .scaling{
+    scale:120%;
+  }
+
+@media(max-width:650px){
+    .head{
+        padding-top: 20px;
+        height: 100px;
+        text-align: center;
+    }
+    .head h1{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .head h1:after{
+        display: none;
+    }
+    .drum{
+        width: 90px;
+        height: 90px;
+    }
+    .drum h2{
+        font-family: 'Tilt Prism', cursive;
+        font-size: 50px;
+        color: #DA0463;
+        user-select: none;
+    }
+    .blocks{
+        
+        margin-top: 50px;
+    }
+}
